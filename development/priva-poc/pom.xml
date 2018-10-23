@@ -7,7 +7,7 @@
     <name>priva-poc</name>
     <groupId>br.unicamp.ft.priva</groupId>
     <artifactId>priva-poc</artifactId>
-    <version>0.3</version>
+    <version>0.3.1</version>
     <packaging>jar</packaging>
     <contributors>
         <contributor>
@@ -45,7 +45,7 @@
         <dependency>
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-core</artifactId>
-            <version>2.5.5</version>
+            <version>[2.7.2,)</version>        
         </dependency>
         <dependency>
             <groupId>javax.ws.rs</groupId>
@@ -110,7 +110,7 @@
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <manifestEntries>
                                         <Main-Class>br.unicamp.ft.priva.aas.LightPrivacyService</Main-Class>
-                                        <Build-Number>0.3</Build-Number>
+                                        <Build-Number>0.3.1</Build-Number>
                                     </manifestEntries>
                                 </transformer>
                             </transformers>
